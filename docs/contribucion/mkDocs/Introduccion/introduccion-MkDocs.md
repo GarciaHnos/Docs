@@ -1,6 +1,6 @@
 # MkDocs
 
-![Logo](./img/MKDocs-Mardown.png)
+![Logo](../../introduccion/img/MKDocs-Mardown.png)
 
 ---
 

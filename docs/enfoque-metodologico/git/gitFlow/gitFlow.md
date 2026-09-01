@@ -3,7 +3,7 @@
 ## Introducción 
 Este flujo describe las buenas prácticas al trabajar con Git y GitHub, desde la creación de una rama `feature` para desarrollar una nueva funcionalidad, hasta la creación de un pull request para fusionar cambios en producción. Los ambientes definidos son:
 
-- **`main`:** Representa el ambiente productivos. Los cambios aquí deben estar completamente probados y listos para desplegar.
+- **`main`:** Representa el ambiente productivo. Los cambios aquí deben estar completamente probados y listos para desplegar.
 - **`hotfix`:** Usada para resolver errores críticos detectados en producción.
 - **`release`:** Rama utilizada para preparar una versión para su despliegue. Permite realizar pruebas finales antes de integrarla en `main`.
 - **`develop`:** Contiene el código en desarrollo que aún no está listo para producción. Aquí se integran las ramas `feature`.
@@ -104,96 +104,74 @@ Una vez que cierres esta página, ya no podrás ver el token. Si lo pierdes, ten
 ```
 - Repite este paso hasta completar la funcionalidad.
 
-### 3. Integrar la Rama `feacture` en `develop`
+### 3. Actualizar la rama `feature` con `develop`
 
-- Asegúrate de que la rama `develop` tenga los últimos cambios:
-
-```bash
-   git checkout develop
-   git pull origin develop
-```
-
-fusionar la rama `feacture` en `develop`:
-```bash
-   git merge feature/<id-ticketJira>
-```
-- Agregar Comentarios en un Merge con Vim
-Cuando hacés un merge que requiere commit:
+Antes de pedir revisión, traé los últimos cambios de `develop` a tu rama. Así el PR nace sin quedar atrás.
 
 ```bash
-Merge branch 'feature/ABC-123' into develop
-- Comentario
+git checkout feature/<id-ticketJira>
+git fetch origin
+git merge origin/develop
 ```
 
-- con  **y** podes agregar un comentario  y para salir **esc**
+Si hay conflictos, resolvelos en la rama `feature`, hacé commit y seguí. No fusionés `feature` en `develop` en tu máquina: eso lo hace el Pull Request.
 
-- Para guardar y salir: escribí : **wq** y presioná Enter.
+### 4. Subir la rama `feature` al remoto
 
-
-- Resuelve conflictos si es necesario, luego realiza un commit:
 ```bash
-   git add archivos_conflictivos
-   git commit -m "Resueltos conflictos entre develop y feature/<id-ticketJira>."
+git push -u origin feature/<id-ticketJira>
 ```
 
-### 4. Subir la Rama al Repositorio Remoto
-Sube los cambios de tu rama `feature` al repositorio remoto:
-```bash
-git push origin develop 
-```
+La primera vez usá `-u` para dejar el tracking. Después alcanza con `git push`.
 
 ### 5. Crear un Pull Request en GitHub
-- Accede al repositorio en GitHub.
 
-- Crea un Pull Request (PR) desde la rama `develop` hacia la rama `feacture/<id-ticketJira>`.
+- Abrí el repositorio en GitHub.
+- Creá un Pull Request **desde** `feature/<id-ticketJira>` **hacia** `develop`.
+- La base es `develop`. El compare es tu `feature`. Nunca al revés.
 
-- Asegúrate de incluir una descripción detallada del PR:
-   - Qué funcionalidad añade.
-   - Enlaces a tickets de Jira relacionados.
-   - Consideraciones importantes (pruebas, dependencias, etc.).
+Incluí en la descripción:
 
-- Asigna revisores para validar el código.
+- Qué funcionalidad añade.
+- Enlace al ticket de Jira.
+- Pruebas hechas y dependencias.
 
-### 6. Revisar y Fusionar el Pull Request
-- Los revisores deben validar los cambios y aprobar el PR.
+Asigná revisores antes de pedir el merge.
 
-- Antes de fusionar, asegúrate de actualizar la rama `develop` con los últimos cambios de `feacture`:
+!!! warning "Dirección del PR"
+    El PR de una funcionalidad va de `feature/<id>` → `develop`. El PR a producción (por ejemplo este sitio de docs) va de `develop` → `main`. No abras un PR de `develop` hacia `feature`.
+
+### 6. Revisar y fusionar el Pull Request
+
+- Los revisores validan y aprueban en GitHub.
+- El merge se hace **en GitHub**, sobre el PR, hacia `develop`.
+- Después del merge, actualizá tu `develop` local y borré la rama `feature`:
+
 ```bash
-   git checkout  develop
-   git merge feature/<id-ticketJira>
-```
-- Una vez actualizado, los revisores pueden proceder a fusionar el PR en `develop`.
-
-### 7. Crear una Rama `release` (Cuando Proceda)
-- Si la funcionalidad está lista para pruebas finales, crea una rama `release` desde `develop`:
-```bash
-   git checkout develop
-   git pull origin develop
-   git checkout -b release/<version>
-```
-
-- Realiza pruebas finales en esta rama y aplica ajustes menores si es necesario.
-
-- Una vez aprobada, fusiona la rama `release` en `main` y `develop`:
-```bash
-   git checkout main
-   git merge release/<version>
-   git push origin main
-
-   git checkout develop
-   git merge release/<version>
-   git push origin develop
+git checkout develop
+git pull origin develop
+git branch -d feature/<id-ticketJira>
+git push origin --delete feature/<id-ticketJira>
 ```
 
-### 8. Integración Final en `main`
-- Cuando una versión esté lista para producción:
-   - Fusiona `release` en `main`.
+### 7. Crear una rama `release` (cuando proceda)
 
-- Elimina ramas temporales:
+Si el conjunto de cambios en `develop` está listo para pruebas finales:
+
 ```bash
-   git branch -d feature/<id-ticketJira>
-   git push origin --delete feature/<id-ticketJira>
+git checkout develop
+git pull origin develop
+git checkout -b release/<version>
+git push -u origin release/<version>
 ```
+
+Aplicá ajustes menores en esa rama. Cuando esté aprobada, abrí un PR de `release/<version>` hacia `main` (y otro hacia `develop` si hace falta reintegrar hotfixes de la release).
+
+### 8. Integración en `main`
+
+Cuando una versión está lista para producción, el merge a `main` se hace por Pull Request (no con `git push` directo a `main` desde la notebook).
+
+En este repositorio de documentación el flujo habitual es: trabajo en `feature` → PR a `develop` → PR de `develop` a `main` → GitHub Actions publica el sitio.
 
 ---
 
