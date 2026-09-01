@@ -1,8 +1,12 @@
 site_name: García Hermanos Agroindustrial S.R.L.
-site_url: https://garciahnos.github.io/Onbording/
+site_url: https://garciahnos.github.io/Docs/
 
 nav:
   - <b>Inicio</b>: index.md
+  - <b>Onboarding</b>:
+      - "<span class='material-icons'>waving_hand</span> Primer día": onboarding/primer-dia.md
+      - "<span class='material-icons'>menu_book</span> Glosario": onboarding/glosario.md
+      - "<span class='material-icons'>groups</span> Contactos": onboarding/contactos.md
   - <b>Enfoque Metodológico</b>:
       - <b>Git</b>: 
           - "<span class='material-icons'>menu_book</span> Introducción": enfoque-metodologico/git/introduccionGit/introduccionGit.md
@@ -18,11 +22,26 @@ nav:
           - "<span class='material-icons'>clean_hands</span> Clean Code": enfoque-metodologico/clean-code/cleancode.md
       - <b>Clean Architecture</b>: 
           - "<span class='material-icons'>architecture</span> Clean Architecture": enfoque-metodologico/clean-architecture/cleanarchitecture.md
-  - <b>Proyectos</b>: 
+  - <b>Proyectos</b>:
       - "<b><span class='material-icons'>search</span> Relevamiento de Programas</b>": proyectos/relevamientoProgramas/relevamientoProgramas.md
+      - <b>Programas</b>:
+          - Horas Sueldos: proyectos/programas/horas-sueldos.md
+          - Final de línea UAT: proyectos/programas/final-linea-uat.md
+          - Final de línea Yogurt: proyectos/programas/final-linea-yogurt.md
+          - Final de línea Quesos: proyectos/programas/final-linea-quesos.md
+          - Marcaciones biométricos: proyectos/programas/marcaciones-biometricos.md
+          - Tinas: proyectos/programas/tinas.md
+          - Mozzarella: proyectos/programas/mozzarella.md
+          - Conteo de hormas blandos: proyectos/programas/conteo-hormas-blandos.md
+          - Slideshow indicadores: proyectos/programas/slideshow-indicadores.md
+          - Precios Web: proyectos/programas/precios-web.md
+          - Etiquetas Bizerba: proyectos/programas/etiquetas-bizerba.md
+          - Balanza termoformados: proyectos/programas/balanza-termoformados.md
+          - Stock volumen silos: proyectos/programas/stock-volumen-silos.md
   - <b>Contribución</b>:
       - "<span class='material-icons'>rocket</span> Introducción": contribucion/introduccion/introduccion.md
       - <b>MkDocs</b>:
+          - "<span class='material-icons'>menu_book</span> Qué es MkDocs": contribucion/mkDocs/Introduccion/introduccion-MkDocs.md
           - "<span class='material-icons'>group</span> Contribución": contribucion/mkDocs/Contribucion/contribucion.md
           - "<span class='material-icons'>explore</span> Navegación": contribucion/mkDocs/Navegacion/navegacion.md
           - "<span class='material-icons'>visibility</span> Previsualización": contribucion/mkDocs/Previsualización/previsualizacion.md
@@ -38,10 +57,10 @@ nav:
 
 site_author: It
 site_description: >-
-  Onbording
+  Documentación e onboarding del Sector IT
 
-repo_name: Onbording
-repo_url: https://github.com/GarciaHnos/Onbording
+repo_name: Docs
+repo_url: https://github.com/GarciaHnos/Docs
 
 theme:
   name: material 
@@ -49,7 +68,7 @@ theme:
   toc: false
   icon:
     repo: fontawesome/brands/github
-    search: fontawesome/solid/search
+    search: material/magnify
   custom_dir: material/overrides
   logo: assets/logo-gh-blanco.png
   favicon: assets/logo-gh.png 
@@ -87,10 +106,8 @@ markdown_extensions:
 plugins:
   - search
   - glightbox:
-      touch: true  # Habilita el soporte táctil para dispositivos móviles
-      zoom: true  # Habilita el zoom en las imágenes
-      autofocus: true # Habilita el foco automático al abrir
-      do_not_load: false # Para cargar el plugin en todas las páginas
+      touchNavigation: true
+      zoomable: true
 
 
 
