@@ -1,21 +1,32 @@
 !!! note "Introducción"
-    🔹Esta tabla contiene un listado de los programas utilizados en planta, 
-    indicando la tecnología, propósito y repositorio asociado.  
-    🔹Sirve como guía rápida para conocer qué hace cada aplicación y dónde encontrar su código.
+    Listado de programas de planta y comerciales del sector IT. Cada nombre enlaza a una página con dependencias y lo que todavía falta documentar. Los repos se verificaron contra la org `GarciaHnos` visible al 1 sep 2026: si un repo es privado y no aparece, márcalo en un PR.
 
+| Nombre | Tecnología | Propósito | Repositorio |
+| ------ | ---------- | --------- | ----------- |
+| [Horas Sueldos](../programas/horas-sueldos.md) | Java | Lee marcaciones de relojes biométricos en red y llama a webservice para grabación en Integra (horas sueldos) | Sin repo documentado |
+| [Final de línea UAT](../programas/final-linea-uat.md) | Java | Lee pallets de CSV y llama a ws para grabación en Integra | Sin repo documentado |
+| [Final de línea Yogurt](../programas/final-linea-yogurt.md) | Python | Lee pallets de SQL Server y llama a ws para grabación en Integra | [gh-ind-yogurt-finalLinea](https://github.com/GarciaHnos/gh-ind-yogurt-finalLinea) |
+| [Final de línea Quesos](../programas/final-linea-quesos.md) | Integra | Lee cajas de SQL Server y las graba en Integra | Sin repo documentado |
+| [Marcaciones biométricos](../programas/marcaciones-biometricos.md) | Python | Lee marcaciones y las graba en Integra (accesos) | [gh-ind-controlHora](https://github.com/GarciaHnos/gh-ind-controlHora) |
+| [Tinas](../programas/tinas.md) | Python | Lee datos del equipo de tinas y llama a ws para grabación en Integra | Sin repo documentado |
+| [Mozzarella](../programas/mozzarella.md) | Python | Graba datos en un PLC según Integra | Sin repo documentado |
+| [Conteo de hormas blandos](../programas/conteo-hormas-blandos.md) | Python | Lee PLC que cuenta hormas y graba en Integra vía ws | Sin repo documentado |
+| [Slideshow indicadores](../programas/slideshow-indicadores.md) | Java | Indicadores de Qlik, Shologix e Integra en pantallas de planta | [gh-ind-slideshow](https://github.com/GarciaHnos/gh-ind-slideshow) |
+| [Precios Web](../programas/precios-web.md) | Java | Scraping de precios en supermercados | [gh-com-preciosweb](https://github.com/GarciaHnos/gh-com-preciosweb) |
+| [Etiquetas Bizerba](../programas/etiquetas-bizerba.md) | Python | Lee SQL Server y graba en Integra | [gh-ind-quesos-lecturaHormas](https://github.com/GarciaHnos/gh-ind-quesos-lecturaHormas) |
+| [Balanza termoformados](../programas/balanza-termoformados.md) | Java | Lee RS232 y graba en Integra vía ws | Sin repo documentado |
+| [Stock volumen silos](../programas/stock-volumen-silos.md) | Python | Lee PLC de stock de silos | [gh-ind-stockVolumenSilos-plc](https://github.com/GarciaHnos/gh-ind-stockVolumenSilos-plc) |
 
-| Nombre     | Tecnología | Proposito | RepoGitHub |
-| ---------- | ---------- | --------- | ---------- |
-| Horas Sueldos  | Java  | Lee marcaciones de relojes biometricos en red y llama a webservice para grabación en Integra (horas sueldos) |       |
-| Final de línea UAT  | Java  | Lee pallets de .csv y llama a ws para grabación en Integra |     |
-| Final de línea Yogurt | Python | Lee pallets de DB SQLServer y llama a ws para grabación en Integra | gh-ind-yogurt-finalLinea |
-| Final de línea Quesos | Integra | Lee cajas de base de datos SQLServer y las graba en Integra |     |
-| Marcaciones de relojes biometricos | Python | Lee marcaciones de relojes biometricos y las graba en Integra (accesos) | gh-ind-controlHora |
-| Tinas | Python | Lee datos de equipo de tinas y llama a ws para grabación en Integra |        |
-| Mozzarella | Python | Graba datos en un PLC cada determinado tiempo según datos de Integra |       |
-| Conteo de hormas Blandos | Python | Lee datos de un PLC que cuenta hormas de la línea y lo graba en Integra via ws |      |
-| Slideshow indicadores | Java | Muestra indicadores de Qlik, shologix e Integra en formato slideshow automatico en diferentes sectores productivos | gh-ind-slideshow |
-| Precios Web | Java | WebScraping de precios de la competencia y propios en paginas web de supermercados | gh-com-preciosweb |
-| Etiquetas Bizerba | Python | Lee registros de una DB SQLServer y graba en Integra | gh-ind-quesos-lecturaHormas |
-| Balanza termoformados | Java | Lee datos a traves de protocolo RS232 y graba datos en Integra via ws |      |
-| Stock Volumn Silos  | Python | Lee datos de PLC de stock de silos de la Planta | gh-ind-stockVolumenSilos-plc | 
+## Otros repos de la org (fuera de esta tabla)
+
+Aparecen en GitHub y no estaban en el relevamiento original de planta:
+
+| Repo | Notas |
+| ---- | ----- |
+| [gh-cps-agenteCotizaciones](https://github.com/GarciaHnos/gh-cps-agenteCotizaciones) | Agente de cotizaciones (compras) |
+| [gh-prod-fundido-recipesOptimization-backend](https://github.com/GarciaHnos/gh-prod-fundido-recipesOptimization-backend) | Optimizador de recetas fundido (backend) |
+| [gh-prod-RecipiesOptimizerFundido-backend](https://github.com/GarciaHnos/gh-prod-RecipiesOptimizerFundido-backend) | Variante / sucesor del backend de recetas |
+| [gh-prod-RecipesOptimizerFundido-frontend](https://github.com/GarciaHnos/gh-prod-RecipesOptimizerFundido-frontend) | Frontend del optimizador de recetas |
+| [gh-ind-multiagents](https://github.com/GarciaHnos/gh-ind-multiagents) | Multiagentes industria |
+| [GarciaHnos/.github](https://github.com/GarciaHnos/.github) | Workflows y código reutilizable |
+| [GarciaHnos/Docs](https://github.com/GarciaHnos/Docs) | Este sitio de documentación |
