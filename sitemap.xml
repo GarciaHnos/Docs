@@ -1,123 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://garciahnos.github.io/Onbording/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/deploy/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/MarkDown/Introduccion/Introduccion/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/draft/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/MarkDown/Sintaxis_Avanzada/Sintaxis_avanzada/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/introduccion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/MarkDown/Sintaxis_Basica/sintaxis_basica/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/mkDocs/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/introduccion/introduccion/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/CICD/CICD/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/mkDocs/Contribucion/contribucion/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/estrategia/cambioDeArq/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/mkDocs/Despliegue/despliegue/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/estrategia/estrategia/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/mkDocs/Introduccion/introduccion-MkDocs/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/estrategia/eventStorming/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/mkDocs/Navegacion/navegacion/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/basura/estrategia/gitHubActionsJenkins/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/contribucion/mkDocs/Previsualizaci%C3%B3n/previsualizacion/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/MarkDown/Introduccion/Introduccion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/devops/onbording/expli-despliegue/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/MarkDown/Sintaxis_Avanzada/Sintaxis_avanzada/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/clean-architecture/cleanarchitecture/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/MarkDown/Sintaxis_Basica/sintaxis_basica/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/clean-code/cleancode/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/introduccion/introduccion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/git/configInicial/configInicial/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/mkDocs/Contribucion/contribucion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/git/directorios/directorios/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/mkDocs/Despliegue/despliegue/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/git/gitFlow/gitFlow/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/mkDocs/Introduccion/introduccion-MkDocs/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/git/introduccionGit/introduccionGit/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/mkDocs/Navegacion/navegacion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/git/manejoDeRepositorios/manejoDeRepositorios/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/contribucion/mkDocs/Previsualizaci%C3%B3n/previsualizacion/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/nomeclatura/nomenclatura/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/devops/onbording/expli-despliegue/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/enfoque-metodologico/principiosSOLID/principios_solid/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/clean-architecture/cleanarchitecture/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/onboarding/contactos/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/clean-code/cleancode/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/onboarding/glosario/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/git/configInicial/configInicial/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/onboarding/primer-dia/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/git/directorios/directorios/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/balanza-termoformados/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/git/gitFlow/gitFlow/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/conteo-hormas-blandos/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/git/introduccionGit/introduccionGit/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/etiquetas-bizerba/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/git/manejoDeRepositorios/manejoDeRepositorios/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/final-linea-quesos/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/nomeclatura/nomenclatura/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/final-linea-uat/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/enfoque-metodologico/principiosSOLID/principios_solid/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/final-linea-yogurt/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
-         <loc>https://garciahnos.github.io/Onbording/proyectos/relevamientoProgramas/relevamientoProgramas/</loc>
-         <lastmod>2025-10-29</lastmod>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/horas-sueldos/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/marcaciones-biometricos/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/mozzarella/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/precios-web/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/slideshow-indicadores/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/stock-volumen-silos/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/programas/tinas/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://garciahnos.github.io/Docs/proyectos/relevamientoProgramas/relevamientoProgramas/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
 </urlset>
