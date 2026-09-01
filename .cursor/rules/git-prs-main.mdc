@@ -1,0 +1,31 @@
+---
+description: PRs directos a main y merge solo con orden explícita
+alwaysApply: true
+---
+
+# Git: PRs a main
+
+Repo canónico: **GarciaHnos/Docs** (el remoto local puede seguir llamándose Onbording). `gh` puede no estar autenticado; usar GitHub MCP.
+
+## Flujo
+
+1. Trabajar en `feature/...`. Nunca commitear ni pushear a `main`.
+2. Con **“hacé el PR”** (o equivalente): commit de lo pedido, push, PR **directo a `main`**. Devolver la URL. No pasar por `develop` salvo que lo pidan.
+3. Con **“pasalo a main”**, **“mergealo”** o **“hacelo directo”**: mergear el PR (`merge_method: merge`). Si no hay PR, crearlo contra `main` y mergearlo en el mismo turno.
+4. Si en el mismo mensaje piden el PR y el merge, hacer ambos.
+
+## Límites
+
+- No mergear solo porque el PR exista.
+- No force push. No `--no-verify`.
+- No incluir archivos no pedidos (p. ej. `AUDITORIA.md`).
+- Tras merge a `main`, el workflow `docs` publica GitHub Pages.
+
+## Ejemplos
+
+```text
+✅ “hacé el PR” → PR feature/* → main, esperar
+✅ “PR a main y mergealo” → PR + merge en el mismo turno
+❌ Push a main sin PR
+❌ PR a develop por defecto
+```
